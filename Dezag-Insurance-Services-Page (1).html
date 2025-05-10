@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dezag Insurance Brokers - Your Trusted Insurance Partner</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#FF7E00',secondary:'#2A3B47'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.hero-section {
+background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 40%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.5) 70%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0) 100%), url('https://readdy.ai/api/search-image?query=professional%20insurance%20office%20setting%20with%20modern%20architecture%2C%20bright%20and%20airy%20space%2C%20subtle%20orange%20accents%2C%20business%20professionals%20discussing%20insurance%20plans%2C%20clean%20and%20minimalist%20design%2C%20high-end%20corporate%20environment%2C%20glass%20walls%2C%20natural%20light%2C%20professional%20atmosphere&width=1600&height=800&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center right;
+}
+.testimonial-slider {
+scroll-behavior: smooth;
+}
+.custom-checkbox {
+position: relative;
+padding-left: 30px;
+cursor: pointer;
+user-select: none;
+}
+.custom-checkbox input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 20px;
+width: 20px;
+background-color: #fff;
+border: 2px solid #e5e7eb;
+border-radius: 4px;
+}
+.custom-checkbox:hover input ~ .checkmark {
+border-color: #d1d5db;
+}
+.custom-checkbox input:checked ~ .checkmark {
+background-color: #FF7E00;
+border-color: #FF7E00;
+}
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+display: block;
+}
+.custom-checkbox .checkmark:after {
+left: 6px;
+top: 2px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.custom-select {
+appearance: none;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23374151'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+background-repeat: no-repeat;
+background-position: right 0.75rem center;
+background-size: 1rem;
+}
+.custom-switch {
+position: relative;
+display: inline-block;
+width: 48px;
+height: 24px;
+}
+.custom-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.switch-slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #e5e7eb;
+transition: .4s;
+border-radius: 24px;
+}
+.switch-slider:before {
+position: absolute;
+content: "";
+height: 20px;
+width: 20px;
+left: 2px;
+bottom: 2px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .switch-slider {
+background-color: #FF7E00;
+}
+input:checked + .switch-slider:before {
+transform: translateX(24px);
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header class="fixed w-full bg-white bg-opacity-95 shadow-sm z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center">
+<a href="#" class="text-3xl font-['Pacifico'] text-primary">Dezag</a>
+<span class="ml-2 text-sm font-medium text-gray-700">Insurance Brokers</span>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a href="#" class="text-gray-800 hover:text-primary font-medium transition">Home</a>
+<a href="#services" class="text-gray-800 hover:text-primary font-medium transition">Services</a>
+<a href="#about" class="text-gray-800 hover:text-primary font-medium transition">About Us</a>
+<a href="#testimonials" class="text-gray-800 hover:text-primary font-medium transition">Testimonials</a>
+<a href="#contact" class="text-gray-800 hover:text-primary font-medium transition">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<div class="hidden md:flex items-center">
+<div class="w-8 h-8 flex items-center justify-center text-primary">
+<i class="ri-phone-line ri-lg"></i>
+</div>
+<span class="text-gray-700 font-medium">+233 547 3078 8285</span>
+</div>
+<a href="#quote-form" class="bg-primary text-white px-4 py-2 !rounded-button font-medium hover:bg-opacity-90 transition whitespace-nowrap">Get Quote</a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700" id="mobile-menu-button">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+<!-- Mobile menu -->
+<div class="md:hidden hidden bg-white w-full shadow-md" id="mobile-menu">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+<a href="#" class="text-gray-800 hover:text-primary font-medium py-2 transition">Home</a>
+<a href="#services" class="text-gray-800 hover:text-primary font-medium py-2 transition">Services</a>
+<a href="#about" class="text-gray-800 hover:text-primary font-medium py-2 transition">About Us</a>
+<a href="#testimonials" class="text-gray-800 hover:text-primary font-medium py-2 transition">Testimonials</a>
+<a href="#contact" class="text-gray-800 hover:text-primary font-medium py-2 transition">Contact</a>
+<div class="flex items-center py-2">
+<div class="w-8 h-8 flex items-center justify-center text-primary">
+<i class="ri-phone-line ri-lg"></i>
+</div>
+<span class="text-gray-700 font-medium">+233 547 3078 8285</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[600px] pt-24 flex items-center overflow-hidden">
+<video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+<source src="https://public.readdy.ai/gen_page/insurance_hero.mp4" type="video/mp4">
+</video>
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<div class="container mx-auto px-4 w-full relative z-10">
+<div class="max-w-xl">
+<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Protecting What Matters Most</h1>
+<p class="text-lg text-gray-100 mb-8">Dezag Insurance Brokers provides personalized insurance solutions to safeguard your future. With over 25 years of experience, we help you find the perfect coverage for your unique needs.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#quote-form" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition text-center whitespace-nowrap">Get Free Quote</a>
+<a href="#services" class="bg-white text-gray-900 px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition text-center whitespace-nowrap">Explore Services</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Partners Section -->
+<section class="py-12 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-10">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Our Partners</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">We work with leading insurance providers to offer you the best coverage options.</p>
+</div>
+<div class="relative">
+<div class="overflow-hidden">
+<div class="flex partner-slider" id="partnerSlider">
+<!-- Partner 1 -->
+<div class="min-w-[200px] px-6">
+<div class="h-20 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%20modern%20minimalist%20insurance%20company%20logo%20design%20with%20blue%20and%20orange%20color%20scheme%2C%20clean%20typography%2C%20abstract%20geometric%20shapes%2C%20corporate%20branding%2C%20white%20background&width=160&height=80&seq=10&orientation=landscape" alt="Insurance Partner 1" class="max-h-full">
+</div>
+</div>
+<!-- Partner 2 -->
+<div class="min-w-[200px] px-6">
+<div class="h-20 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%20modern%20minimalist%20insurance%20company%20logo%20design%20with%20green%20and%20gray%20color%20scheme%2C%20clean%20typography%2C%20abstract%20geometric%20shapes%2C%20corporate%20branding%2C%20white%20background&width=160&height=80&seq=11&orientation=landscape" alt="Insurance Partner 2" class="max-h-full">
+</div>
+</div>
+<!-- Partner 3 -->
+<div class="min-w-[200px] px-6">
+<div class="h-20 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%20modern%20minimalist%20insurance%20company%20logo%20design%20with%20purple%20and%20black%20color%20scheme%2C%20clean%20typography%2C%20abstract%20geometric%20shapes%2C%20corporate%20branding%2C%20white%20background&width=160&height=80&seq=12&orientation=landscape" alt="Insurance Partner 3" class="max-h-full">
+</div>
+</div>
+<!-- Partner 4 -->
+<div class="min-w-[200px] px-6">
+<div class="h-20 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%20modern%20minimalist%20insurance%20company%20logo%20design%20with%20red%20and%20gray%20color%20scheme%2C%20clean%20typography%2C%20abstract%20geometric%20shapes%2C%20corporate%20branding%2C%20white%20background&width=160&height=80&seq=13&orientation=landscape" alt="Insurance Partner 4" class="max-h-full">
+</div>
+</div>
+<!-- Partner 5 -->
+<div class="min-w-[200px] px-6">
+<div class="h-20 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%20modern%20minimalist%20insurance%20company%20logo%20design%20with%20teal%20and%20black%20color%20scheme%2C%20clean%20typography%2C%20abstract%20geometric%20shapes%2C%20corporate%20branding%2C%20white%20background&width=160&height=80&seq=14&orientation=landscape" alt="Insurance Partner 5" class="max-h-full">
+</div>
+</div>
+<!-- Partner 6 -->
+<div class="min-w-[200px] px-6">
+<div class="h-20 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%20modern%20minimalist%20insurance%20company%20logo%20design%20with%20navy%20and%20orange%20color%20scheme%2C%20clean%20typography%2C%20abstract%20geometric%20shapes%2C%20corporate%20branding%2C%20white%20background&width=160&height=80&seq=15&orientation=landscape" alt="Insurance Partner 6" class="max-h-full">
+</div>
+</div>
+</div>
+</div>
+<button class="absolute top-1/2 -left-4 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md text-gray-700 hover:text-primary transition z-10" id="partnerPrevButton">
+<i class="ri-arrow-left-s-line ri-lg"></i>
+</button>
+<button class="absolute top-1/2 -right-4 -translate-y-1/2 w-8 h-8 flex items-center justify-center bg-white rounded-full shadow-md text-gray-700 hover:text-primary transition z-10" id="partnerNextButton">
+<i class="ri-arrow-right-s-line ri-lg"></i>
+</button>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Our Insurance Services</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">We offer a comprehensive range of insurance solutions tailored to meet your specific needs and provide you with peace of mind.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Life Insurance -->
+<div class="bg-white rounded shadow-md hover:shadow-lg transition p-6 group relative overflow-hidden">
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-white via-white/90 to-white/80">
+<img src="https://readdy.ai/api/search-image?query=happy%20family%20outdoors%2C%20soft%20natural%20lighting%2C%20candid%20moment%2C%20parents%20with%20children%2C%20lifestyle%20photography%2C%20warm%20tones%2C%20blurred%20background%2C%20professional%20family%20portrait&width=800&height=600&seq=20&orientation=landscape" alt="Life Insurance Background" class="w-full h-full object-cover opacity-20">
+</div>
+<div class="relative z-10">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 group-hover:bg-primary group-hover:text-white transition">
+<i class="ri-heart-pulse-line ri-2x text-primary group-hover:text-white"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Life Insurance</h3>
+<p class="text-gray-600 mb-4">Protect your family's financial future with our comprehensive life insurance plans tailored to your specific needs and budget.</p>
+<ul class="space-y-2 mb-4">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-2 text-gray-600">Term Life Insurance</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-2 text-gray-600">Whole Life Insurance</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-2 text-gray-600">Universal Life Insurance</span>
+</li>
+</ul>
+<a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Auto Insurance -->
+<div class="bg-white rounded shadow-md hover:shadow-lg transition p-6 group relative overflow-hidden">
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-white via-white/90 to-white/80">
+<img src="https://readdy.ai/api/search-image?query=modern%20luxury%20car%20on%20a%20clean%20minimalist%20background%2C%20professional%20automotive%20photography%2C%20soft%20lighting%2C%20elegant%20presentation%2C%20subtle%20reflections%2C%20high-end%20vehicle%20showcase&width=800&height=600&seq=22&orientation=landscape" alt="Auto Insurance Background" class="w-full h-full object-cover opacity-20">
+</div>
+<div class="relative z-10">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 group-hover:bg-primary group-hover:text-white transition">
+<i class="ri-car-line ri-2x text-primary group-hover:text-white"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Auto Insurance</h3>
+<p class="text-gray-600 mb-4">Protect your vehicle with comprehensive auto insurance coverage that keeps you safe on the road and gives you peace of mind.</p>
+<ul class="space-y-2 mb-4">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-2 text-gray-600">Comprehensive Coverage</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-2 text-gray-600">Collision Protection</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-2 text-gray-600">Third-Party Liability</span>
+</li>
+</ul>
+<a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Property Insurance -->
+<div class="bg-white rounded shadow-md hover:shadow-lg transition p-6 group relative overflow-hidden">
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-white via-white/90 to-white/80">
+<img src="https://readdy.ai/api/search-image?query=modern%20luxury%20home%20exterior%2C%20contemporary%20architecture%2C%20beautiful%20landscaping%2C%20professional%20real%20estate%20photography%2C%20twilight%20shot%2C%20elegant%20property%20showcase&width=800&height=600&seq=21&orientation=landscape" alt="Property Insurance Background" class="w-full h-full object-cover opacity-20">
+</div>
+<div class="relative z-10">
+<div class="w-16 h-16 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-6 group-hover:bg-primary group-hover:text-white transition">
+<i class="ri-home-4-line ri-2x text-primary group-hover:text-white"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Property Insurance</h3>
+<p class="text-gray-600 mb-4">Safeguard your valuable assets with our comprehensive property insurance solutions for homes, businesses, and more.</p>
+<ul class="space-y-2 mb-4">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-2 text-gray-600">Homeowners Insurance</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-2 text-gray-600">Renters Insurance</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="ml-2 text-gray-600">Commercial Property Insurance</span>
+</li>
+</ul>
+<a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+Learn More
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a href="#" class="inline-flex items-center bg-white text-primary border border-primary px-6 py-3 !rounded-button font-medium hover:bg-primary hover:text-white transition whitespace-nowrap">
+View All Services
+<div class="w-5 h-5 flex items-center justify-center ml-2">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Why Choose Us Section -->
+<section id="about" class="py-16">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<img src="https://readdy.ai/api/search-image?query=professional%20insurance%20consultants%20in%20a%20modern%20office%2C%20diverse%20team%20of%20experts%20discussing%20insurance%20plans%2C%20business%20casual%20attire%2C%20friendly%20and%20approachable%20demeanor%2C%20clean%20well-lit%20office%20space%20with%20orange%20accents%2C%20multiple%20consultants%20reviewing%20documents%20together%2C%20professional%20setting&width=600&height=500&seq=2&orientation=landscape" alt="Insurance Consultants" class="rounded shadow-lg object-cover object-top w-full h-full">
+</div>
+<div>
+<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Dezag Insurance Brokers?</h2>
+<p class="text-gray-600 mb-8">For over 25 years, we've been helping individuals and businesses find the perfect insurance coverage to protect what matters most. Our experienced team of brokers works with you to understand your unique needs and find solutions that provide peace of mind.</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full shrink-0">
+<i class="ri-shield-check-line ri-lg text-primary"></i>
+</div>
+<div class="ml-4">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Expert Guidance</h3>
+<p class="text-gray-600">Our licensed insurance professionals provide personalized advice to help you make informed decisions.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full shrink-0">
+<i class="ri-money-dollar-circle-line ri-lg text-primary"></i>
+</div>
+<div class="ml-4">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Competitive Rates</h3>
+<p class="text-gray-600">We work with multiple insurance providers to ensure you get the best coverage at the most competitive rates.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full shrink-0">
+<i class="ri-customer-service-2-line ri-lg text-primary"></i>
+</div>
+<div class="ml-4">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Exceptional Service</h3>
+<p class="text-gray-600">Our dedicated team provides ongoing support and assistance with claims, ensuring a smooth experience.</p>
+</div>
+</div>
+</div>
+<div class="mt-10 flex flex-wrap gap-8">
+<div class="text-center">
+<p class="text-4xl font-bold text-primary">25+</p>
+<p class="text-gray-600">Years Experience</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-bold text-primary">10,000+</p>
+<p class="text-gray-600">Satisfied Clients</p>
+</div>
+<div class="text-center">
+<p class="text-4xl font-bold text-primary">98%</p>
+<p class="text-gray-600">Client Retention</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Request Form -->
+<section id="quote-form" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+<div class="p-8 md:p-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-2">Get Your Free Insurance Quote</h2>
+<p class="text-gray-600 mb-8">Fill out the form below and our team will get back to you with a personalized quote within 24 hours.</p>
+<form id="quoteRequestForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="fullName" class="block text-gray-700 font-medium mb-2">Full Name</label>
+<input type="text" id="fullName" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Smith" required>
+</div>
+<div>
+<label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+<input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="john@example.com" required>
+</div>
+<div>
+<label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+<input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="(555) 123-4567" required>
+</div>
+<div>
+<label for="insuranceType" class="block text-gray-700 font-medium mb-2">Insurance Type</label>
+<div class="relative">
+<select id="insuranceType" class="w-full px-4 py-3 border border-gray-300 rounded appearance-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent custom-select" required>
+<option value="" disabled selected>Select Insurance Type</option>
+<option value="life">Life Insurance</option>
+<option value="health">Health Insurance</option>
+<option value="property">Property Insurance</option>
+<option value="auto">Auto Insurance</option>
+<option value="business">Business Insurance</option>
+<option value="other">Other</option>
+</select>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<label for="message" class="block text-gray-700 font-medium mb-2">Additional Information</label>
+<textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded resize-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Please provide any specific details about your insurance needs..."></textarea>
+</div>
+<div class="mb-6">
+<label class="custom-checkbox">
+<input type="checkbox" required>
+<span class="checkmark"></span>
+<span class="text-gray-700">I agree to the <a href="#" class="text-primary hover:underline">Terms of Service</a> and <a href="#" class="text-primary hover:underline">Privacy Policy</a></span>
+</label>
+</div>
+<button type="submit" class="w-full bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition whitespace-nowrap">Request Free Quote</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it. Here's what some of our satisfied clients have to say about their experience with Dezag Insurance Brokers.</p>
+</div>
+<div class="relative">
+<div class="overflow-hidden">
+<div class="flex testimonial-slider" id="testimonialSlider">
+<!-- Testimonial 1 -->
+<div class="min-w-full md:min-w-[33.333%] px-4">
+<div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
+<div class="text-primary mb-4">
+<i class="ri-double-quotes-l ri-2x"></i>
+</div>
+<p class="text-gray-600 mb-6 flex-grow">Dezag Insurance Brokers made finding the right life insurance policy so easy. Their team took the time to understand my family's needs and presented options that fit our budget perfectly. I couldn't be happier with their service!</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20middle-aged%20woman%20with%20short%20brown%20hair%2C%20friendly%20smile%2C%20business%20casual%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait%2C%20warm%20expression&width=100&height=100&seq=3&orientation=squarish" alt="Sarah Johnson" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<h4 class="text-gray-900 font-semibold">Sarah Johnson</h4>
+<p class="text-gray-500 text-sm">Life Insurance Client</p>
+<div class="flex text-primary mt-1">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="min-w-full md:min-w-[33.333%] px-4">
+<div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
+<div class="text-primary mb-4">
+<i class="ri-double-quotes-l ri-2x"></i>
+</div>
+<p class="text-gray-600 mb-6 flex-grow">After a minor flood damaged my home, Dezag's team guided me through every step of the claims process. Their property insurance expertise saved me thousands of dollars and made a stressful situation much easier to handle.</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20an%20African%20American%20man%20in%20his%2040s%2C%20short%20hair%2C%20friendly%20smile%2C%20business%20casual%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait%2C%20warm%20expression&width=100&height=100&seq=4&orientation=squarish" alt="Marcus Thompson" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<h4 class="text-gray-900 font-semibold">Marcus Thompson</h4>
+<p class="text-gray-500 text-sm">Property Insurance Client</p>
+<div class="flex text-primary mt-1">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="min-w-full md:min-w-[33.333%] px-4">
+<div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
+<div class="text-primary mb-4">
+<i class="ri-double-quotes-l ri-2x"></i>
+</div>
+<p class="text-gray-600 mb-6 flex-grow">As a small business owner, finding the right insurance coverage was overwhelming until I found Dezag. They tailored a comprehensive package that protected my business assets and employees while staying within my budget.</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20an%20Asian%20woman%20in%20her%2030s%2C%20long%20black%20hair%2C%20friendly%20smile%2C%20business%20casual%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait%2C%20warm%20expression&width=100&height=100&seq=5&orientation=squarish" alt="Jennifer Chen" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<h4 class="text-gray-900 font-semibold">Jennifer Chen</h4>
+<p class="text-gray-500 text-sm">Business Insurance Client</p>
+<div class="flex text-primary mt-1">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-half-fill"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 4 -->
+<div class="min-w-full md:min-w-[33.333%] px-4">
+<div class="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
+<div class="text-primary mb-4">
+<i class="ri-double-quotes-l ri-2x"></i>
+</div>
+<p class="text-gray-600 mb-6 flex-grow">When my family needed health insurance, Dezag's team compared dozens of plans to find one that covered all our needs. Their knowledge of the healthcare system saved us from making costly mistakes with our coverage.</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20Hispanic%20man%20in%20his%2050s%2C%20salt%20and%20pepper%20hair%2C%20friendly%20smile%2C%20business%20casual%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait%2C%20warm%20expression&width=100&height=100&seq=6&orientation=squarish" alt="Carlos Rodriguez" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<h4 class="text-gray-900 font-semibold">Carlos Rodriguez</h4>
+<p class="text-gray-500 text-sm">Health Insurance Client</p>
+<div class="flex text-primary mt-1">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button class="absolute top-1/2 left-0 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md text-gray-700 hover:text-primary z-10" id="prevButton">
+<i class="ri-arrow-left-s-line ri-lg"></i>
+</button>
+<button class="absolute top-1/2 right-0 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-md text-gray-700 hover:text-primary z-10" id="nextButton">
+<i class="ri-arrow-right-s-line ri-lg"></i>
+</button>
+</div>
+<div class="flex justify-center mt-8">
+<div class="flex space-x-2" id="testimonialDots">
+<button class="w-3 h-3 rounded-full bg-primary" data-index="0"></button>
+<button class="w-3 h-3 rounded-full bg-gray-300" data-index="1"></button>
+<button class="w-3 h-3 rounded-full bg-gray-300" data-index="2"></button>
+<button class="w-3 h-3 rounded-full bg-gray-300" data-index="3"></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Contact Us</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Have questions about our insurance services? Our team is here to help. Reach out to us using any of the methods below.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-white rounded-lg shadow-md p-8">
+<h3 class="text-2xl font-semibold text-gray-900 mb-6">Get In Touch</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full shrink-0">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div class="ml-4">
+<h4 class="text-lg font-medium text-gray-900">Our Office</h4>
+<p class="text-gray-600">House No. A 1015/14,<br>Delonix Street, Dansoman<br>Last Stop (Ebenezer SHS)</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full shrink-0">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div class="ml-4">
+<h4 class="text-lg font-medium text-gray-900">Phone</h4>
+<p class="text-gray-600">+233 547 3078 8285</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full shrink-0">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div class="ml-4">
+<h4 class="text-lg font-medium text-gray-900">Email</h4>
+<p class="text-gray-600">dezagbrokers@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary bg-opacity-10 rounded-full shrink-0">
+<i class="ri-time-line text-primary"></i>
+</div>
+<div class="ml-4">
+<h4 class="text-lg font-medium text-gray-900">Business Hours</h4>
+<p class="text-gray-600">Monday - Friday: 9:00 AM - 4:00 PM</p>
+<p class="text-gray-600">Saturday - Sunday: Closed</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="text-lg font-medium text-gray-900 mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+<i class="ri-twitter-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition">
+<i class="ri-instagram-line"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden h-[500px]">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.582348933989!2d-0.27338312620413113!3d5.531267194448945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf975061a3732f%3A0x8264b44a81be33df!2sDezag%20Insurance%20Brokers%20Ltd!5e1!3m2!1sen!2sgh!" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-16 bg-primary bg-opacity-5">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-gray-900 mb-4">Stay Updated</h2>
+<p class="text-gray-600 mb-8">Subscribe to our newsletter to receive the latest insurance news, tips, and special offers directly to your inbox.</p>
+<form class="flex flex-col sm:flex-row gap-4">
+<input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" required>
+<button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition whitespace-nowrap">Subscribe</button>
+</form>
+<p class="text-gray-500 text-sm mt-4">By subscribing, you agree to our <a href="#" class="text-primary hover:underline">Privacy Policy</a>. You can unsubscribe at any time.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<div>
+<div class="flex items-center mb-4">
+<a href="#" class="text-3xl font-['Pacifico'] text-primary">Dezag</a>
+<span class="ml-2 text-sm font-medium text-gray-300">Insurance Brokers</span>
+</div>
+<p class="text-gray-400 mb-6">Your trusted partner for comprehensive insurance solutions. We're committed to helping you protect what matters most with personalized coverage options.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition">
+<i class="ri-twitter-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:bg-primary hover:text-white transition">
+<i class="ri-instagram-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Home</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-primary transition">Services</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-primary transition">About Us</a></li>
+<li><a href="#testimonials" class="text-gray-400 hover:text-primary transition">Testimonials</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-primary transition">Contact</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Careers</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Blog</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6">Insurance Services</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Life Insurance</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Health Insurance</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Property Insurance</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Auto Insurance</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Business Insurance</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Travel Insurance</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Retirement Planning</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 Dezag Insurance Brokers. All rights reserved.</p>
+<div class="flex flex-wrap gap-4">
+<a href="#" class="text-gray-400 text-sm hover:text-primary transition">Privacy Policy</a>
+<a href="#" class="text-gray-400 text-sm hover:text-primary transition">Terms of Service</a>
+<a href="#" class="text-gray-400 text-sm hover:text-primary transition">Cookie Policy</a>
+<a href="#" class="text-gray-400 text-sm hover:text-primary transition">Sitemap</a>
+</div>
+</div>
+<div class="mt-6 flex flex-wrap justify-center gap-6">
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-visa-fill ri-lg text-gray-400"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-mastercard-fill ri-lg text-gray-400"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-paypal-fill ri-lg text-gray-400"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-apple-fill ri-lg text-gray-400"></i>
+</div>
+<div class="w-10 h-6 flex items-center justify-center">
+<i class="ri-google-fill ri-lg text-gray-400"></i>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Partners slider
+const partnerSlider = document.getElementById('partnerSlider');
+const partnerPrevButton = document.getElementById('partnerPrevButton');
+const partnerNextButton = document.getElementById('partnerNextButton');
+let partnerCurrentPosition = 0;
+const partnerSlideWidth = 200; // Width of each partner slide
+const partnerSlidesCount = partnerSlider.children.length;
+let visibleSlides = Math.floor(partnerSlider.offsetWidth / partnerSlideWidth);
+function updatePartnerSlider() {
+visibleSlides = Math.floor(partnerSlider.offsetWidth / partnerSlideWidth);
+const maxPosition = Math.max(0, partnerSlidesCount - visibleSlides);
+if (partnerCurrentPosition > maxPosition) {
+partnerCurrentPosition = maxPosition;
+updatePartnerSliderPosition();
+}
+}
+function updatePartnerSliderPosition() {
+const offset = -partnerCurrentPosition * partnerSlideWidth;
+partnerSlider.style.transform = `translateX(${offset}px)`;
+partnerSlider.style.transition = 'transform 0.3s ease-in-out';
+// Update button states
+partnerPrevButton.style.opacity = partnerCurrentPosition <= 0 ? '0.5' : '1';
+partnerNextButton.style.opacity = partnerCurrentPosition >= partnerSlidesCount - visibleSlides ? '0.5' : '1';
+}
+partnerPrevButton.addEventListener('click', () => {
+if (partnerCurrentPosition > 0) {
+partnerCurrentPosition--;
+updatePartnerSliderPosition();
+}
+});
+partnerNextButton.addEventListener('click', () => {
+if (partnerCurrentPosition < partnerSlidesCount - visibleSlides) {
+partnerCurrentPosition++;
+updatePartnerSliderPosition();
+}
+});
+// Auto slide for partner slider
+let partnerAutoSlideInterval = setInterval(() => {
+if (partnerCurrentPosition < partnerSlidesCount - visibleSlides) {
+partnerCurrentPosition++;
+} else {
+partnerCurrentPosition = 0;
+}
+updatePartnerSliderPosition();
+}, 3000);
+// Pause auto slide on hover
+partnerSlider.addEventListener('mouseenter', () => {
+clearInterval(partnerAutoSlideInterval);
+});
+partnerSlider.addEventListener('mouseleave', () => {
+partnerAutoSlideInterval = setInterval(() => {
+if (partnerCurrentPosition < partnerSlidesCount - visibleSlides) {
+partnerCurrentPosition++;
+} else {
+partnerCurrentPosition = 0;
+}
+updatePartnerSliderPosition();
+}, 3000);
+});
+// Update on window resize
+window.addEventListener('resize', updatePartnerSlider);
+// Initial setup
+updatePartnerSlider();
+// Mobile menu toggle
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+// Close mobile menu when clicking on a link
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+});
+});
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Form validation
+const quoteRequestForm = document.getElementById('quoteRequestForm');
+if (quoteRequestForm) {
+quoteRequestForm.addEventListener('submit', function(e) {
+e.preventDefault();
+// Basic validation
+const fullName = document.getElementById('fullName').value;
+const email = document.getElementById('email').value;
+const phone = document.getElementById('phone').value;
+const insuranceType = document.getElementById('insuranceType').value;
+if (!fullName || !email || !phone || !insuranceType) {
+alert('Please fill in all required fields.');
+return;
+}
+// Email validation
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(email)) {
+alert('Please enter a valid email address.');
+return;
+}
+// Phone validation
+const phoneRegex = /^[\d\s\-\(\)]+$/;
+if (!phoneRegex.test(phone)) {
+alert('Please enter a valid phone number.');
+return;
+}
+// If all validations pass
+alert('Thank you for your submission! Our team will contact you shortly with your personalized quote.');
+quoteRequestForm.reset();
+});
+}
+});
+document.addEventListener('DOMContentLoaded', function() {
+// Testimonial slider
+const slider = document.getElementById('testimonialSlider');
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+const dots = document.getElementById('testimonialDots').querySelectorAll('button');
+let currentIndex = 0;
+let slidesPerView = 1;
+const slidesCount = slider.children.length;
+let isAnimating = false;
+function updateSlidesPerView() {
+slidesPerView = window.innerWidth >= 768 ? 3 : 1;
+return slidesPerView;
+}
+function updateSliderStyles() {
+slider.style.transition = 'transform 0.5s ease';
+Array.from(slider.children).forEach(slide => {
+slide.style.minWidth = `${100 / slidesPerView}%`;
+});
+}
+function updateNavigation() {
+const maxIndex = Math.ceil(slidesCount / slidesPerView) - 1;
+prevButton.style.opacity = currentIndex <= 0 ? '0.5' : '1';
+prevButton.style.cursor = currentIndex <= 0 ? 'not-allowed' : 'pointer';
+nextButton.style.opacity = currentIndex >= maxIndex ? '0.5' : '1';
+nextButton.style.cursor = currentIndex >= maxIndex ? 'not-allowed' : 'pointer';
+}
+function updateDots() {
+const activeDotIndex = Math.floor(currentIndex * slidesPerView / slidesCount * dots.length);
+dots.forEach((dot, i) => {
+if (i === activeDotIndex) {
+dot.classList.remove('bg-gray-300');
+dot.classList.add('bg-primary');
+} else {
+dot.classList.remove('bg-primary');
+dot.classList.add('bg-gray-300');
+}
+});
+}
+function goToSlide(index, smooth = true) {
+if (isAnimating) return;
+const maxIndex = Math.ceil(slidesCount / slidesPerView) - 1;
+currentIndex = Math.max(0, Math.min(index, maxIndex));
+const offset = -(currentIndex * (100 / slidesPerView));
+if (smooth) {
+isAnimating = true;
+slider.style.transition = 'transform 0.5s ease';
+requestAnimationFrame(() => {
+slider.style.transform = `translateX(${offset}%)`;
+});
+setTimeout(() => {
+isAnimating = false;
+}, 500);
+} else {
+slider.style.transition = 'none';
+slider.style.transform = `translateX(${offset}%)`;
+}
+updateNavigation();
+updateDots();
+}
+// Event listeners
+prevButton.addEventListener('click', () => {
+if (currentIndex > 0) {
+goToSlide(currentIndex - 1);
+}
+});
+nextButton.addEventListener('click', () => {
+const maxIndex = Math.ceil(slidesCount / slidesPerView) - 1;
+if (currentIndex < maxIndex) {
+goToSlide(currentIndex + 1);
+}
+});
+dots.forEach((dot, i) => {
+dot.addEventListener('click', () => {
+const targetIndex = Math.floor(i * slidesCount / dots.length / slidesPerView);
+goToSlide(targetIndex);
+});
+});
+// Handle touch events for mobile
+let touchStartX = 0;
+let touchEndX = 0;
+slider.addEventListener('touchstart', (e) => {
+touchStartX = e.touches[0].clientX;
+slider.style.transition = 'none';
+}, { passive: true });
+slider.addEventListener('touchmove', (e) => {
+if (isAnimating) return;
+touchEndX = e.touches[0].clientX;
+const diff = touchStartX - touchEndX;
+const offset = -(currentIndex * (100 / slidesPerView)) - (diff / slider.offsetWidth * 100);
+slider.style.transform = `translateX(${offset}%)`;
+}, { passive: true });
+slider.addEventListener('touchend', () => {
+const diff = touchStartX - touchEndX;
+if (Math.abs(diff) > 50) {
+if (diff > 0) {
+const maxIndex = Math.ceil(slidesCount / slidesPerView) - 1;
+if (currentIndex < maxIndex) goToSlide(currentIndex + 1);
+} else {
+if (currentIndex > 0) goToSlide(currentIndex - 1);
+}
+} else {
+goToSlide(currentIndex);
+}
+});
+// Auto slide
+let autoSlideInterval;
+function startAutoSlide() {
+autoSlideInterval = setInterval(() => {
+const maxIndex = Math.ceil(slidesCount / slidesPerView) - 1;
+goToSlide(currentIndex >= maxIndex ? 0 : currentIndex + 1);
+}, 5000);
+}
+function stopAutoSlide() {
+clearInterval(autoSlideInterval);
+}
+slider.addEventListener('mouseenter', stopAutoSlide);
+slider.addEventListener('mouseleave', startAutoSlide);
+slider.addEventListener('touchstart', stopAutoSlide);
+slider.addEventListener('touchend', startAutoSlide);
+// Initialize slider
+function initSlider() {
+updateSlidesPerView();
+updateSliderStyles();
+goToSlide(0, false);
+startAutoSlide();
+}
+// Update on window resize
+let resizeTimeout;
+window.addEventListener('resize', () => {
+clearTimeout(resizeTimeout);
+resizeTimeout = setTimeout(() => {
+updateSlidesPerView();
+updateSliderStyles();
+goToSlide(currentIndex, false);
+}, 100);
+});
+initSlider();
+// Initialize responsive behavior
+function updateSliderView() {
+const viewportWidth = window.innerWidth;
+if (viewportWidth >= 768) { // md breakpoint
+// On desktop, show 3 slides at once
+slider.style.transform = `translateX(0)`;
+currentIndex = 0;
+// Update dots
+dots.forEach((dot, i) => {
+if (i === 0) {
+dot.classList.remove('bg-gray-300');
+dot.classList.add('bg-primary');
+} else {
+dot.classList.remove('bg-primary');
+dot.classList.add('bg-gray-300');
+}
+});
+// Update slide widths
+Array.from(slider.children).forEach(slide => {
+slide.style.minWidth = '33.333%';
+});
+} else {
+// On mobile, show 1 slide at once
+slider.style.transform = `translateX(0)`;
+currentIndex = 0;
+// Update dots
+dots.forEach((dot, i) => {
+if (i === 0) {
+dot.classList.remove('bg-gray-300');
+dot.classList.add('bg-primary');
+} else {
+dot.classList.remove('bg-primary');
+dot.classList.add('bg-gray-300');
+}
+});
+// Update slide widths
+Array.from(slider.children).forEach(slide => {
+slide.style.minWidth = '100%';
+});
+}
+}
+// Initial setup
+updateSliderView();
+// Update on window resize
+window.addEventListener('resize', updateSliderView);
+});
+</script>
+</body>
+</html>
